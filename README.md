@@ -15,7 +15,7 @@
 ### Set up the enviroment
 Android studio 프로젝트를 어플리케이션으로 변환하기 위해서는 프로젝트 [build 및 Release](https://developer.android.com/studio/run?hl=ko)가 필요하다.
 Release된 application apk파일은 [여기서](https://drive.google.com/file/d/10Wl7Zqgn_CkN_GZkeBubOKhIzmBS2iKl/view?usp=sharing) 다운받을 수 있다.
-Apk 파일을 사용하기 위해서는 휴대폰에 [ARCore sdk](https://github.com/google-ar/arcore-android-sdk/releases)를 먼저 설치해야 합니다. 
+Apk 파일을 사용하기 위해서는 휴대폰에 [ARCore sdk](https://github.com/google-ar/arcore-android-sdk/releases)를 먼저 설치해야 한다. 
 
 ### References
 We used [ARCore Augmented Images](https://codelabs.developers.google.com/codelabs/augimg-intro/index.html?index=..%2F..index#0) of Google
