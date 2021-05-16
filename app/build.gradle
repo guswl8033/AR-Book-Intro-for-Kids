@@ -1,0 +1,114 @@
+/*
+ * Copyright 2018 Google LLC
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+ apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 28
+    defaultConfig {
+        applicationId "com.google.ar.sceneform.samples.augmentedimage"
+        vectorDrawables.useSupportLibrary = true
+        // Sceneform requires minSdkVersion >= 24.
+        minSdkVersion 24
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+    }
+    // Sceneform libraries use language constructs from Java 8.
+    // Add these compile options if targeting minSdkVersion < 26.
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    externalNativeBuild {
+        ndkBuild {
+            path file('src/main/jni/Android.mk')
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    implementation 'com.android.support:appcompat-v7:28.0.0'
+    implementation 'com.android.support:design:28.0.0'
+
+    // Use the Sceneform UX Package pre-built from Maven.
+    implementation "com.google.ar.sceneform.ux:sceneform-ux:1.9.0"
+    implementation project(path: ':opencv')
+
+    // Use the Sceneform UX Package built from the source files included in the sceneformux folder.
+    //api project(":sceneformux")
+    implementation 'com.rmtheis:tess-two:9.1.0'
+}
+
+apply plugin: 'com.google.ar.sceneform.plugin'
+
+sceneform.asset('sampledata/models/frame_lower_left.obj',
+        'default',
+        'sampledata/models/frame_lower_left.sfa',
+        'src/main/assets/models/frame_lower_left')
+
+sceneform.asset('sampledata/models/frame_lower_right.obj',
+        'default',
+        'sampledata/models/frame_lower_right.sfa',
+        'src/main/assets/models/frame_lower_right')
+
+sceneform.asset('sampledata/models/frame_upper_left.obj',
+        'default',
+        'sampledata/models/frame_upper_left.sfa',
+        'src/main/assets/models/frame_upper_left')
+
+sceneform.asset('sampledata/models/frame_upper_right.obj',
+        'default',
+        'sampledata/models/frame_upper_right.sfa',
+        'src/main/assets/models/frame_upper_right')
+
+sceneform.asset('sampledata/green-maze/A fox and a crane0.obj',
+        'default',
+        'sampledata/green-maze/A fox and a crane0.sfa',
+        'src/main/assets/A fox and a crane0')
+
+sceneform.asset('sampledata/green-maze/A fox and a crane1.obj',
+        'default',
+        'sampledata/green-maze/A fox and a crane1.sfa',
+        'src/main/assets/A fox and a crane1')
+
+sceneform.asset('sampledata/green-maze/A fox and a crane2.fbx',
+        'default',
+        'sampledata/green-maze/A fox and a crane2.sfa',
+        'src/main/assets/A fox and a crane2')
+
+sceneform.asset('sampledata/green-maze/A rabbit and a turtle0.obj',
+        'default',
+        'sampledata/green-maze/A rabbit and a turtle0.sfa',
+        'src/main/assets/A rabbit and a turtle0')
+
+sceneform.asset('sampledata/green-maze/A rabbit and a turtle1.obj',
+        'default',
+        'sampledata/green-maze/A rabbit and a turtle1.sfa',
+        'src/main/assets/A rabbit and a turtle1')
+
+sceneform.asset('sampledata/green-maze/A rabbit and a turtle2.fbx',
+        'default',
+        'sampledata/green-maze/A rabbit and a turtle2.sfa',
+        'src/main/assets/A rabbit and a turtle2')

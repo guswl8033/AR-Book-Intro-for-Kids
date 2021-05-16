@@ -1,0 +1,4 @@
+book|D:\H\EWHA\4-1\DIP\Project\HJ\sceneform-android-sdk-1.9.0\samples\augmentedimage\app\src\main\assets\Book.jpg
+dog|D:\H\EWHA\4-1\DIP\Project\HJ\sceneform-android-sdk-1.9.0\samples\augmentedimage\app\src\main\assets\dog.jpg
+A fox and a crane|D:\H\EWHA\4-1\DIP\Project\HJ\sceneform-android-sdk-1.9.0\samples\augmentedimage\app\src\main\assets\A fox and a crane.jpg
+A rabbit and a turtle|D:\H\EWHA\4-1\DIP\Project\HJ\sceneform-android-sdk-1.9.0\samples\augmentedimage\app\src\main\assets\A rabbit and a turtle.jpg
