@@ -17,8 +17,4 @@ Release된 application apk파일은 [여기서](https://drive.google.com/file/d/
 Apk 파일을 사용하기 위해서는 휴대폰에 [ARCore sdk](https://github.com/google-ar/arcore-android-sdk/releases)를 먼저 설치해야 합니다. 
 
 ### References
-We used pretrained networks below
-
-```
-ARCore Augmented Images https://codelabs.developers.google.com/codelabs/augimg-intro/index.html?index=..%2F..index#0
-```
+We used [ARCore Augmented Images](https://codelabs.developers.google.com/codelabs/augimg-intro/index.html?index=..%2F..index#0) of Google
