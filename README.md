@@ -8,7 +8,7 @@
 제목에 해당하는 텍스트 부분만을 추출하고 database 에서 결과와 일치하는 항목을 찾아 책 표지 image 위에 사전에 database 로 입력해놓은 AR 영상을 차례대로 송출한다. 만약 텍스트
 인식이 제대로 이루어지지 않거나 database 에 제목과 일치하는 책이 없는 경우 경고메세지를 출력한 후 이전 단계로 돌아가도록 하는 feedback 과정이 이루어진다
 
-자세한 사항은 [보고서](./ARBookIntroforkids.pdf) 참조
+자세한 사항은 [보고서](./AR Book Intro for kids.pdf) 참조
 
 ![Result](./Result.jpg)
 
